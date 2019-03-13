@@ -20,20 +20,4 @@ dout.writeUTF("Frame "+ i%2 +"sent\n ACK "+(i+1%2+"received");
 dout.flush();
 
 
-//dout.close();
 
-
-
-DataInputStream dis=new DataInputStream(s.getInputStream());
-
-
-String	str=(String)dis.readUTF();
-System.out.println("message= "+str);
-
-//s.close();
-dout.close();
-s.close();
-
-}catch(Exception e){System.out.println(e);}
-}
-}
